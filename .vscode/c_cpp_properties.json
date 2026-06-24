@@ -3,7 +3,8 @@
         {
             "name": "Mac",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/build/_deps/googletest-src/googletest/include"
             ],
             "defines": [],
             "cStandard": "c17",

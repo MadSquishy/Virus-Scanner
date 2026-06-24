@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/akhildoddapaneni/Code/AV/AV/build/cmake_install.cmake",
+		"/Users/akhildoddapaneni/Code/AV/AV/build/_deps/googletest-build/cmake_install.cmake",
+		"/Users/akhildoddapaneni/Code/AV/AV/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"/Users/akhildoddapaneni/Code/AV/AV/build/_deps/googletest-build/googletest/cmake_install.cmake",
+		"/Users/akhildoddapaneni/Code/AV/AV/build/Parser/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

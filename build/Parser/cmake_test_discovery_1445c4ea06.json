@@ -1,0 +1,17 @@
+{
+  "tests": 1,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "ParserTest",
+      "tests": 1,
+      "testsuite": [
+        {
+          "name": "Placeholder",
+          "file": "\/Users\/akhildoddapaneni\/Code\/AV\/AV\/Parser\/parser_gtest.cpp",
+          "line": 5
+        }
+      ]
+    }
+  ]
+}
