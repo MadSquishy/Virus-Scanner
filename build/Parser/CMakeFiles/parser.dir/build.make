@@ -76,15 +76,15 @@ Parser/CMakeFiles/parser.dir/parser.cpp.o: Parser/CMakeFiles/parser.dir/flags.ma
 Parser/CMakeFiles/parser.dir/parser.cpp.o: /Users/akhildoddapaneni/Code/AV/AV/Parser/parser.cpp
 Parser/CMakeFiles/parser.dir/parser.cpp.o: Parser/CMakeFiles/parser.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/akhildoddapaneni/Code/AV/AV/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Parser/CMakeFiles/parser.dir/parser.cpp.o"
-	cd /Users/akhildoddapaneni/Code/AV/AV/build/Parser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Parser/CMakeFiles/parser.dir/parser.cpp.o -MF CMakeFiles/parser.dir/parser.cpp.o.d -o CMakeFiles/parser.dir/parser.cpp.o -c /Users/akhildoddapaneni/Code/AV/AV/Parser/parser.cpp
+	cd /Users/akhildoddapaneni/Code/AV/AV/build/Parser && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Parser/CMakeFiles/parser.dir/parser.cpp.o -MF CMakeFiles/parser.dir/parser.cpp.o.d -o CMakeFiles/parser.dir/parser.cpp.o -c /Users/akhildoddapaneni/Code/AV/AV/Parser/parser.cpp
 
 Parser/CMakeFiles/parser.dir/parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/parser.dir/parser.cpp.i"
-	cd /Users/akhildoddapaneni/Code/AV/AV/build/Parser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/akhildoddapaneni/Code/AV/AV/Parser/parser.cpp > CMakeFiles/parser.dir/parser.cpp.i
+	cd /Users/akhildoddapaneni/Code/AV/AV/build/Parser && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/akhildoddapaneni/Code/AV/AV/Parser/parser.cpp > CMakeFiles/parser.dir/parser.cpp.i
 
 Parser/CMakeFiles/parser.dir/parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parser.dir/parser.cpp.s"
-	cd /Users/akhildoddapaneni/Code/AV/AV/build/Parser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/akhildoddapaneni/Code/AV/AV/Parser/parser.cpp -o CMakeFiles/parser.dir/parser.cpp.s
+	cd /Users/akhildoddapaneni/Code/AV/AV/build/Parser && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/akhildoddapaneni/Code/AV/AV/Parser/parser.cpp -o CMakeFiles/parser.dir/parser.cpp.s
 
 # Object files for target parser
 parser_OBJECTS = \

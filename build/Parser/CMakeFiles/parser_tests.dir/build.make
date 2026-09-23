@@ -76,15 +76,15 @@ Parser/CMakeFiles/parser_tests.dir/parser_gtest.cpp.o: Parser/CMakeFiles/parser_
 Parser/CMakeFiles/parser_tests.dir/parser_gtest.cpp.o: /Users/akhildoddapaneni/Code/AV/AV/Parser/parser_gtest.cpp
 Parser/CMakeFiles/parser_tests.dir/parser_gtest.cpp.o: Parser/CMakeFiles/parser_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/akhildoddapaneni/Code/AV/AV/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Parser/CMakeFiles/parser_tests.dir/parser_gtest.cpp.o"
-	cd /Users/akhildoddapaneni/Code/AV/AV/build/Parser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Parser/CMakeFiles/parser_tests.dir/parser_gtest.cpp.o -MF CMakeFiles/parser_tests.dir/parser_gtest.cpp.o.d -o CMakeFiles/parser_tests.dir/parser_gtest.cpp.o -c /Users/akhildoddapaneni/Code/AV/AV/Parser/parser_gtest.cpp
+	cd /Users/akhildoddapaneni/Code/AV/AV/build/Parser && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Parser/CMakeFiles/parser_tests.dir/parser_gtest.cpp.o -MF CMakeFiles/parser_tests.dir/parser_gtest.cpp.o.d -o CMakeFiles/parser_tests.dir/parser_gtest.cpp.o -c /Users/akhildoddapaneni/Code/AV/AV/Parser/parser_gtest.cpp
 
 Parser/CMakeFiles/parser_tests.dir/parser_gtest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/parser_tests.dir/parser_gtest.cpp.i"
-	cd /Users/akhildoddapaneni/Code/AV/AV/build/Parser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/akhildoddapaneni/Code/AV/AV/Parser/parser_gtest.cpp > CMakeFiles/parser_tests.dir/parser_gtest.cpp.i
+	cd /Users/akhildoddapaneni/Code/AV/AV/build/Parser && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/akhildoddapaneni/Code/AV/AV/Parser/parser_gtest.cpp > CMakeFiles/parser_tests.dir/parser_gtest.cpp.i
 
 Parser/CMakeFiles/parser_tests.dir/parser_gtest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/parser_tests.dir/parser_gtest.cpp.s"
-	cd /Users/akhildoddapaneni/Code/AV/AV/build/Parser && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/akhildoddapaneni/Code/AV/AV/Parser/parser_gtest.cpp -o CMakeFiles/parser_tests.dir/parser_gtest.cpp.s
+	cd /Users/akhildoddapaneni/Code/AV/AV/build/Parser && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/akhildoddapaneni/Code/AV/AV/Parser/parser_gtest.cpp -o CMakeFiles/parser_tests.dir/parser_gtest.cpp.s
 
 # Object files for target parser_tests
 parser_tests_OBJECTS = \

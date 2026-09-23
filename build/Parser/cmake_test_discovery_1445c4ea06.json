@@ -1,15 +1,25 @@
 {
-  "tests": 1,
+  "tests": 3,
   "name": "AllTests",
   "testsuites": [
     {
       "name": "ParserTest",
-      "tests": 1,
+      "tests": 3,
       "testsuite": [
         {
-          "name": "Placeholder",
+          "name": "Parser",
           "file": "\/Users\/akhildoddapaneni\/Code\/AV\/AV\/Parser\/parser_gtest.cpp",
-          "line": 5
+          "line": 15
+        },
+        {
+          "name": "HasExecutable",
+          "file": "\/Users\/akhildoddapaneni\/Code\/AV\/AV\/Parser\/parser_gtest.cpp",
+          "line": 92
+        },
+        {
+          "name": "IsScanTarget",
+          "file": "\/Users\/akhildoddapaneni\/Code\/AV\/AV\/Parser\/parser_gtest.cpp",
+          "line": 110
         }
       ]
     }

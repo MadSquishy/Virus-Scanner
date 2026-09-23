@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhasher.a CMakeFiles/hasher.dir/hasher.cpp.o
+/usr/bin/ranlib libhasher.a

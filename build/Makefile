@@ -227,6 +227,19 @@ parser/fast:
 .PHONY : parser/fast
 
 #=============================================================================
+# Target rules for targets named parser_main
+
+# Build rule for target.
+parser_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parser_main
+.PHONY : parser_main
+
+# fast build rule for target.
+parser_main/fast:
+	$(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/parser_main.dir/build.make Parser/CMakeFiles/parser_main.dir/build
+.PHONY : parser_main/fast
+
+#=============================================================================
 # Target rules for targets named parser_tests
 
 # Build rule for target.
@@ -238,6 +251,45 @@ parser_tests: cmake_check_build_system
 parser_tests/fast:
 	$(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/parser_tests.dir/build.make Parser/CMakeFiles/parser_tests.dir/build
 .PHONY : parser_tests/fast
+
+#=============================================================================
+# Target rules for targets named hasher
+
+# Build rule for target.
+hasher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hasher
+.PHONY : hasher
+
+# fast build rule for target.
+hasher/fast:
+	$(MAKE) $(MAKESILENT) -f Hasher/CMakeFiles/hasher.dir/build.make Hasher/CMakeFiles/hasher.dir/build
+.PHONY : hasher/fast
+
+#=============================================================================
+# Target rules for targets named hasher_main
+
+# Build rule for target.
+hasher_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hasher_main
+.PHONY : hasher_main
+
+# fast build rule for target.
+hasher_main/fast:
+	$(MAKE) $(MAKESILENT) -f Hasher/CMakeFiles/hasher_main.dir/build.make Hasher/CMakeFiles/hasher_main.dir/build
+.PHONY : hasher_main/fast
+
+#=============================================================================
+# Target rules for targets named hasher_tests
+
+# Build rule for target.
+hasher_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hasher_tests
+.PHONY : hasher_tests
+
+# fast build rule for target.
+hasher_tests/fast:
+	$(MAKE) $(MAKESILENT) -f Hasher/CMakeFiles/hasher_tests.dir/build.make Hasher/CMakeFiles/hasher_tests.dir/build
+.PHONY : hasher_tests/fast
 
 # Help Target
 help:
@@ -255,7 +307,11 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... hasher"
+	@echo "... hasher_main"
+	@echo "... hasher_tests"
 	@echo "... parser"
+	@echo "... parser_main"
 	@echo "... parser_tests"
 .PHONY : help
 

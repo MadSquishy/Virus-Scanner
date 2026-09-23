@@ -1,0 +1,5 @@
+if(EXISTS "/Users/akhildoddapaneni/Code/AV/AV/build/Hasher/hasher_tests[1]_tests.cmake")
+  include("/Users/akhildoddapaneni/Code/AV/AV/build/Hasher/hasher_tests[1]_tests.cmake")
+else()
+  add_test(hasher_tests_NOT_BUILT hasher_tests_NOT_BUILT)
+endif()

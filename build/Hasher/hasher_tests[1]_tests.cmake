@@ -1,0 +1,5 @@
+add_test([=[HasherTest.EmptyFileHash]=]  /Users/akhildoddapaneni/Code/AV/AV/build/Hasher/hasher_tests [==[--gtest_filter=HasherTest.EmptyFileHash]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HasherTest.EmptyFileHash]=]  PROPERTIES DEF_SOURCE_LINE /Users/akhildoddapaneni/Code/AV/AV/Hasher/hasher_gtest.cpp:14 WORKING_DIRECTORY /Users/akhildoddapaneni/Code/AV/AV/build/Hasher SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[HasherTest.HelloNHash]=]  /Users/akhildoddapaneni/Code/AV/AV/build/Hasher/hasher_tests [==[--gtest_filter=HasherTest.HelloNHash]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[HasherTest.HelloNHash]=]  PROPERTIES DEF_SOURCE_LINE /Users/akhildoddapaneni/Code/AV/AV/Hasher/hasher_gtest.cpp:28 WORKING_DIRECTORY /Users/akhildoddapaneni/Code/AV/AV/build/Hasher SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  hasher_tests_TESTS HasherTest.EmptyFileHash HasherTest.HelloNHash)

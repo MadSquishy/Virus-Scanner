@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/hasher_tests.dir/hasher_gtest.cpp.o -o hasher_tests  libhasher.a ../lib/libgtest_main.a /opt/homebrew/opt/openssl@3/lib/libcrypto.dylib ../lib/libgtest.a

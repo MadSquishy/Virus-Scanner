@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
+
 project(AV)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -11,12 +12,15 @@ FetchContent_Declare(
   GIT_REPOSITORY https://github.com/google/googletest.git
   GIT_TAG        v1.14.0
 )
-set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
-message(STATUS "GTest source dir: ${googletest_SOURCE_DIR}")
 
-#libgmagic
+#libmagic
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(LIBMAGIC REQUIRED libmagic)
 
+#openssl
+set(OPENSSL_ROOT_DIR /opt/homebrew/opt/openssl@3)
+
+find_package(OpenSSL REQUIRED)
 add_subdirectory(Parser)
+add_subdirectory(Hasher)

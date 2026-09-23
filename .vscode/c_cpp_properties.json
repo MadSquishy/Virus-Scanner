@@ -4,7 +4,9 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/build/_deps/googletest-src/googletest/include"
+                "${workspaceFolder}/build/_deps/googletest-src/googletest/include",
+                "/opt/homebrew/Cellar/libmagic/5.48/include",
+                "/opt/homebrew/opt/openssl@3/include"
             ],
             "defines": [],
             "cStandard": "c17",

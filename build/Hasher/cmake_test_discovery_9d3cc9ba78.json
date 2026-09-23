@@ -1,0 +1,22 @@
+{
+  "tests": 2,
+  "name": "AllTests",
+  "testsuites": [
+    {
+      "name": "HasherTest",
+      "tests": 2,
+      "testsuite": [
+        {
+          "name": "EmptyFileHash",
+          "file": "\/Users\/akhildoddapaneni\/Code\/AV\/AV\/Hasher\/hasher_gtest.cpp",
+          "line": 14
+        },
+        {
+          "name": "HelloNHash",
+          "file": "\/Users\/akhildoddapaneni\/Code\/AV\/AV\/Hasher\/hasher_gtest.cpp",
+          "line": 28
+        }
+      ]
+    }
+  ]
+}
