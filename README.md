@@ -1,7 +1,8 @@
-#Virus Scanner
+# Virus Scanner
+
 A C++ static malware scanning project that recursively analyzes files and filters potential targets based on file permissions and MIME types.
 
-##Current Features
+## Current Features
 Recursive filesystem parsing
 
 File permission filtering
@@ -12,7 +13,7 @@ SHA-256 file signature generation
 
 Python prototype Bloom filter using Kirsch–Mitzenmacher double hashing for efficient signature membership queries
 
-##Technologies
+## Technologies
 C++
 
 Python
@@ -21,5 +22,5 @@ OpenCV
 
 libmagic
 
-##Status
+## Status
 Currently in development. The parser and hashing stages are implemented, with additional scanning analysis features, and file quarantining systems planned.
