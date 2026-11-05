@@ -11,6 +11,13 @@ YARA::YARA(std::filesystem::path rulesDir)
 : rulesDir{rulesDir}, compiledRules {}
 {
     this->compile();                     // add rules into compiler
+    save();
+}
+
+YARA::YARA()
+: rulesDir{}, compiledRules{} 
+{
+    load();
 }
 
 YARA::~YARA(){
@@ -72,7 +79,7 @@ int YARA::getMatch(std::filesystem::path targetFile) {
     return scanError ? -1 : 0;
 }
 
-bool YARA::ingest(std::filesystem::path ruleFile) {
+bool YARA::ingest(std::filesystem::path ruleFile) { // extra function for provider side use. Not meant to permanently modify yara ruleset
     YR_COMPILER* compiler = nullptr;
     YR_RULES* rules = nullptr;
 
@@ -116,7 +123,7 @@ bool YARA::ingest(std::filesystem::path ruleFile) {
 
 void YARA::compilerCallBack(int error_level, const char* file_name, int line_number, const YR_RULE* rule,
 const char* message, void* user_data) {
-        return;
+     std::cerr << "[YARA] " << file_name << ':' << line_number << ": " << message << std::endl;
 }
 
 int YARA::scanCallBack(YR_SCAN_CONTEXT* context, int message, void* message_data, void* user_data) {
@@ -125,4 +132,49 @@ int YARA::scanCallBack(YR_SCAN_CONTEXT* context, int message, void* message_data
     }
 
     return CALLBACK_CONTINUE;
+}
+
+bool YARA::save() {
+    const std::filesystem::path directory = "./compiled_rules";
+    std::filesystem::create_directories(directory);
+
+    for (size_t i = 0; i < compiledRules.size(); ++i)
+    {
+        auto path = directory / ("rules_" + std::to_string(i) + ".yarac");
+
+        int result = yr_rules_save(compiledRules[i], path.string().c_str());
+
+        if (result != ERROR_SUCCESS)
+            return false; // failed to save a compiled rule for some reason
+    }
+
+
+    return true;
+}
+
+bool YARA::load() {
+    const std::filesystem::path directory = "./compiled_rules";
+
+    for (const auto& file : std::filesystem::directory_iterator(directory))
+    {
+        YR_RULES* rule = nullptr;
+        int result = yr_rules_load(file.string().c_str(), &rule);
+
+        if (result != ERROR_SUCCESS) // a rule couldnt be loaded. Something is broken on my (the publisher) end
+        { // delete all loaded rules and manualy troubleshoot existing rules
+            if (rule != nullptr) 
+            {
+                yr_rules_destroy(rule);
+            }
+            for (YR_RULES* loadedRules : compiledRules)
+            {
+                yr_rules_destroy(loadedRules);
+            }
+            compiledRules.clear();
+            return false; 
+        }
+
+        compiledRules.push_back(rule);
+    }
+    return true;
 }
