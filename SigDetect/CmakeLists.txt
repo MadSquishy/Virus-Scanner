@@ -1,4 +1,4 @@
-add_library(yara_detect yara_scanner.cpp)
+add_library(yara_detect yara.cpp)
 
 target_include_directories(yara_detect PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
