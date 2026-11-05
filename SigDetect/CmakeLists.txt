@@ -1,0 +1,5 @@
+add_library(yara_detect yara_scanner.cpp)
+
+target_include_directories(yara_detect PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+target_link_libraries(yara_detect PRIVATE PkgConfig::LIBYARA)
