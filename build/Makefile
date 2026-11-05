@@ -227,17 +227,17 @@ parser/fast:
 .PHONY : parser/fast
 
 #=============================================================================
-# Target rules for targets named parser_main
+# Target rules for targets named parser_manual_test
 
 # Build rule for target.
-parser_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parser_main
-.PHONY : parser_main
+parser_manual_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parser_manual_test
+.PHONY : parser_manual_test
 
 # fast build rule for target.
-parser_main/fast:
-	$(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/parser_main.dir/build.make Parser/CMakeFiles/parser_main.dir/build
-.PHONY : parser_main/fast
+parser_manual_test/fast:
+	$(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/parser_manual_test.dir/build.make Parser/CMakeFiles/parser_manual_test.dir/build
+.PHONY : parser_manual_test/fast
 
 #=============================================================================
 # Target rules for targets named parser_tests
@@ -266,17 +266,17 @@ hasher/fast:
 .PHONY : hasher/fast
 
 #=============================================================================
-# Target rules for targets named hasher_main
+# Target rules for targets named hasher_manual_test
 
 # Build rule for target.
-hasher_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hasher_main
-.PHONY : hasher_main
+hasher_manual_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hasher_manual_test
+.PHONY : hasher_manual_test
 
 # fast build rule for target.
-hasher_main/fast:
-	$(MAKE) $(MAKESILENT) -f Hasher/CMakeFiles/hasher_main.dir/build.make Hasher/CMakeFiles/hasher_main.dir/build
-.PHONY : hasher_main/fast
+hasher_manual_test/fast:
+	$(MAKE) $(MAKESILENT) -f Hasher/CMakeFiles/hasher_manual_test.dir/build.make Hasher/CMakeFiles/hasher_manual_test.dir/build
+.PHONY : hasher_manual_test/fast
 
 #=============================================================================
 # Target rules for targets named hasher_tests
@@ -308,10 +308,10 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... hasher"
-	@echo "... hasher_main"
+	@echo "... hasher_manual_test"
 	@echo "... hasher_tests"
 	@echo "... parser"
-	@echo "... parser_main"
+	@echo "... parser_manual_test"
 	@echo "... parser_tests"
 .PHONY : help
 

@@ -2,6 +2,17 @@
 
 A C++ static malware scanning project that recursively analyzes files and filters potential targets based on file permissions and MIME types.
 
+## Requirements
+### Build Tools
+Cmake 3.20+
+C++20 compatible compiler
+
+### Dependencies
+OpenSSL 3.x - For cryptographic functions
+libmagic    - For filetype identification
+YARA        - For rule based detection / pattern matching
+
+
 ## Current Features
 Recursive filesystem parsing
 

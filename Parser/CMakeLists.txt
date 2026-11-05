@@ -7,8 +7,8 @@ target_link_directories(parser PUBLIC ${LIBMAGIC_LIBRARY_DIRS})
 target_link_libraries(parser PUBLIC ${LIBMAGIC_LIBRARIES})
 
 #parser_main
-add_executable(parser_main parser_main.cpp)
-target_link_libraries(parser_main PRIVATE parser)
+add_executable(parser_manual_test parser_manual_test.cpp)
+target_link_libraries(parser_manual_test PRIVATE parser)
 
 # gtest
 enable_testing()

@@ -105,9 +105,9 @@ set(CMAKE_DEPEND_INFO_FILES
   "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
   "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "Parser/CMakeFiles/parser.dir/DependInfo.cmake"
-  "Parser/CMakeFiles/parser_main.dir/DependInfo.cmake"
+  "Parser/CMakeFiles/parser_manual_test.dir/DependInfo.cmake"
   "Parser/CMakeFiles/parser_tests.dir/DependInfo.cmake"
   "Hasher/CMakeFiles/hasher.dir/DependInfo.cmake"
-  "Hasher/CMakeFiles/hasher_main.dir/DependInfo.cmake"
+  "Hasher/CMakeFiles/hasher_manual_test.dir/DependInfo.cmake"
   "Hasher/CMakeFiles/hasher_tests.dir/DependInfo.cmake"
   )

@@ -19,8 +19,7 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(LIBMAGIC REQUIRED libmagic)
 
 #openssl
-set(OPENSSL_ROOT_DIR /opt/homebrew/opt/openssl@3)
-
 find_package(OpenSSL REQUIRED)
+
 add_subdirectory(Parser)
 add_subdirectory(Hasher)

@@ -176,18 +176,18 @@ parser/fast:
 .PHONY : parser/fast
 
 # Convenience name for target.
-Parser/CMakeFiles/parser_main.dir/rule:
-	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Parser/CMakeFiles/parser_main.dir/rule
-.PHONY : Parser/CMakeFiles/parser_main.dir/rule
+Parser/CMakeFiles/parser_manual_test.dir/rule:
+	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Parser/CMakeFiles/parser_manual_test.dir/rule
+.PHONY : Parser/CMakeFiles/parser_manual_test.dir/rule
 
 # Convenience name for target.
-parser_main: Parser/CMakeFiles/parser_main.dir/rule
-.PHONY : parser_main
+parser_manual_test: Parser/CMakeFiles/parser_manual_test.dir/rule
+.PHONY : parser_manual_test
 
 # fast build rule for target.
-parser_main/fast:
-	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/parser_main.dir/build.make Parser/CMakeFiles/parser_main.dir/build
-.PHONY : parser_main/fast
+parser_manual_test/fast:
+	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/parser_manual_test.dir/build.make Parser/CMakeFiles/parser_manual_test.dir/build
+.PHONY : parser_manual_test/fast
 
 # Convenience name for target.
 Parser/CMakeFiles/parser_tests.dir/rule:
@@ -251,29 +251,29 @@ parser_gtest.cpp.s:
 	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/parser_tests.dir/build.make Parser/CMakeFiles/parser_tests.dir/parser_gtest.cpp.s
 .PHONY : parser_gtest.cpp.s
 
-parser_main.o: parser_main.cpp.o
-.PHONY : parser_main.o
+parser_manual_test.o: parser_manual_test.cpp.o
+.PHONY : parser_manual_test.o
 
 # target to build an object file
-parser_main.cpp.o:
-	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/parser_main.dir/build.make Parser/CMakeFiles/parser_main.dir/parser_main.cpp.o
-.PHONY : parser_main.cpp.o
+parser_manual_test.cpp.o:
+	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/parser_manual_test.dir/build.make Parser/CMakeFiles/parser_manual_test.dir/parser_manual_test.cpp.o
+.PHONY : parser_manual_test.cpp.o
 
-parser_main.i: parser_main.cpp.i
-.PHONY : parser_main.i
+parser_manual_test.i: parser_manual_test.cpp.i
+.PHONY : parser_manual_test.i
 
 # target to preprocess a source file
-parser_main.cpp.i:
-	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/parser_main.dir/build.make Parser/CMakeFiles/parser_main.dir/parser_main.cpp.i
-.PHONY : parser_main.cpp.i
+parser_manual_test.cpp.i:
+	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/parser_manual_test.dir/build.make Parser/CMakeFiles/parser_manual_test.dir/parser_manual_test.cpp.i
+.PHONY : parser_manual_test.cpp.i
 
-parser_main.s: parser_main.cpp.s
-.PHONY : parser_main.s
+parser_manual_test.s: parser_manual_test.cpp.s
+.PHONY : parser_manual_test.s
 
 # target to generate assembly for a file
-parser_main.cpp.s:
-	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/parser_main.dir/build.make Parser/CMakeFiles/parser_main.dir/parser_main.cpp.s
-.PHONY : parser_main.cpp.s
+parser_manual_test.cpp.s:
+	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Parser/CMakeFiles/parser_manual_test.dir/build.make Parser/CMakeFiles/parser_manual_test.dir/parser_manual_test.cpp.s
+.PHONY : parser_manual_test.cpp.s
 
 # Help Target
 help:
@@ -288,7 +288,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... parser"
-	@echo "... parser_main"
+	@echo "... parser_manual_test"
 	@echo "... parser_tests"
 	@echo "... parser.o"
 	@echo "... parser.i"
@@ -296,9 +296,9 @@ help:
 	@echo "... parser_gtest.o"
 	@echo "... parser_gtest.i"
 	@echo "... parser_gtest.s"
-	@echo "... parser_main.o"
-	@echo "... parser_main.i"
-	@echo "... parser_main.s"
+	@echo "... parser_manual_test.o"
+	@echo "... parser_manual_test.i"
+	@echo "... parser_manual_test.s"
 .PHONY : help
 
 

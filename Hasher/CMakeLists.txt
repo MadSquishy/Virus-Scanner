@@ -6,9 +6,9 @@ target_include_directories(hasher PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(hasher PUBLIC OpenSSL::Crypto)
 
 #hasher_main
-add_executable(hasher_main hasher_main.cpp)
+add_executable(hasher_manual_test hasher_manual_test.cpp)
 
-target_link_libraries(hasher_main PRIVATE hasher)
+target_link_libraries(hasher_manual_test PRIVATE hasher)
 
 # gtest
 enable_testing()

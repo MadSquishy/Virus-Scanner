@@ -31,9 +31,9 @@
 },
 {
   "directory": "/Users/akhildoddapaneni/Code/AV/AV/build/Parser",
-  "command": "/usr/bin/clang++  -I/Users/akhildoddapaneni/Code/AV/AV/Parser -I/opt/homebrew/Cellar/libmagic/5.48/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/parser_main.dir/parser_main.cpp.o -c /Users/akhildoddapaneni/Code/AV/AV/Parser/parser_main.cpp",
-  "file": "/Users/akhildoddapaneni/Code/AV/AV/Parser/parser_main.cpp",
-  "output": "Parser/CMakeFiles/parser_main.dir/parser_main.cpp.o"
+  "command": "/usr/bin/clang++  -I/Users/akhildoddapaneni/Code/AV/AV/Parser -I/opt/homebrew/Cellar/libmagic/5.48/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/parser_manual_test.dir/parser_manual_test.cpp.o -c /Users/akhildoddapaneni/Code/AV/AV/Parser/parser_manual_test.cpp",
+  "file": "/Users/akhildoddapaneni/Code/AV/AV/Parser/parser_manual_test.cpp",
+  "output": "Parser/CMakeFiles/parser_manual_test.dir/parser_manual_test.cpp.o"
 },
 {
   "directory": "/Users/akhildoddapaneni/Code/AV/AV/build/Parser",
@@ -49,9 +49,9 @@
 },
 {
   "directory": "/Users/akhildoddapaneni/Code/AV/AV/build/Hasher",
-  "command": "/usr/bin/clang++  -I/Users/akhildoddapaneni/Code/AV/AV/Hasher -isystem /opt/homebrew/opt/openssl@3/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/hasher_main.dir/hasher_main.cpp.o -c /Users/akhildoddapaneni/Code/AV/AV/Hasher/hasher_main.cpp",
-  "file": "/Users/akhildoddapaneni/Code/AV/AV/Hasher/hasher_main.cpp",
-  "output": "Hasher/CMakeFiles/hasher_main.dir/hasher_main.cpp.o"
+  "command": "/usr/bin/clang++  -I/Users/akhildoddapaneni/Code/AV/AV/Hasher -isystem /opt/homebrew/opt/openssl@3/include -g -std=gnu++20 -arch arm64 -o CMakeFiles/hasher_manual_test.dir/hasher_manual_test.cpp.o -c /Users/akhildoddapaneni/Code/AV/AV/Hasher/hasher_manual_test.cpp",
+  "file": "/Users/akhildoddapaneni/Code/AV/AV/Hasher/hasher_manual_test.cpp",
+  "output": "Hasher/CMakeFiles/hasher_manual_test.dir/hasher_manual_test.cpp.o"
 },
 {
   "directory": "/Users/akhildoddapaneni/Code/AV/AV/build/Hasher",

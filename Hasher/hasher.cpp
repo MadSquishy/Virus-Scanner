@@ -7,7 +7,7 @@
 
 #include "hasher.hpp"
 
-//#include <openssl/evp.h>
+#include <openssl/evp.h>
 
 namespace fs = std::filesystem;
 

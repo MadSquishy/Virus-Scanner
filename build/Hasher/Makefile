@@ -176,18 +176,18 @@ hasher/fast:
 .PHONY : hasher/fast
 
 # Convenience name for target.
-Hasher/CMakeFiles/hasher_main.dir/rule:
-	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Hasher/CMakeFiles/hasher_main.dir/rule
-.PHONY : Hasher/CMakeFiles/hasher_main.dir/rule
+Hasher/CMakeFiles/hasher_manual_test.dir/rule:
+	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Hasher/CMakeFiles/hasher_manual_test.dir/rule
+.PHONY : Hasher/CMakeFiles/hasher_manual_test.dir/rule
 
 # Convenience name for target.
-hasher_main: Hasher/CMakeFiles/hasher_main.dir/rule
-.PHONY : hasher_main
+hasher_manual_test: Hasher/CMakeFiles/hasher_manual_test.dir/rule
+.PHONY : hasher_manual_test
 
 # fast build rule for target.
-hasher_main/fast:
-	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Hasher/CMakeFiles/hasher_main.dir/build.make Hasher/CMakeFiles/hasher_main.dir/build
-.PHONY : hasher_main/fast
+hasher_manual_test/fast:
+	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Hasher/CMakeFiles/hasher_manual_test.dir/build.make Hasher/CMakeFiles/hasher_manual_test.dir/build
+.PHONY : hasher_manual_test/fast
 
 # Convenience name for target.
 Hasher/CMakeFiles/hasher_tests.dir/rule:
@@ -251,29 +251,29 @@ hasher_gtest.cpp.s:
 	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Hasher/CMakeFiles/hasher_tests.dir/build.make Hasher/CMakeFiles/hasher_tests.dir/hasher_gtest.cpp.s
 .PHONY : hasher_gtest.cpp.s
 
-hasher_main.o: hasher_main.cpp.o
-.PHONY : hasher_main.o
+hasher_manual_test.o: hasher_manual_test.cpp.o
+.PHONY : hasher_manual_test.o
 
 # target to build an object file
-hasher_main.cpp.o:
-	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Hasher/CMakeFiles/hasher_main.dir/build.make Hasher/CMakeFiles/hasher_main.dir/hasher_main.cpp.o
-.PHONY : hasher_main.cpp.o
+hasher_manual_test.cpp.o:
+	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Hasher/CMakeFiles/hasher_manual_test.dir/build.make Hasher/CMakeFiles/hasher_manual_test.dir/hasher_manual_test.cpp.o
+.PHONY : hasher_manual_test.cpp.o
 
-hasher_main.i: hasher_main.cpp.i
-.PHONY : hasher_main.i
+hasher_manual_test.i: hasher_manual_test.cpp.i
+.PHONY : hasher_manual_test.i
 
 # target to preprocess a source file
-hasher_main.cpp.i:
-	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Hasher/CMakeFiles/hasher_main.dir/build.make Hasher/CMakeFiles/hasher_main.dir/hasher_main.cpp.i
-.PHONY : hasher_main.cpp.i
+hasher_manual_test.cpp.i:
+	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Hasher/CMakeFiles/hasher_manual_test.dir/build.make Hasher/CMakeFiles/hasher_manual_test.dir/hasher_manual_test.cpp.i
+.PHONY : hasher_manual_test.cpp.i
 
-hasher_main.s: hasher_main.cpp.s
-.PHONY : hasher_main.s
+hasher_manual_test.s: hasher_manual_test.cpp.s
+.PHONY : hasher_manual_test.s
 
 # target to generate assembly for a file
-hasher_main.cpp.s:
-	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Hasher/CMakeFiles/hasher_main.dir/build.make Hasher/CMakeFiles/hasher_main.dir/hasher_main.cpp.s
-.PHONY : hasher_main.cpp.s
+hasher_manual_test.cpp.s:
+	cd /Users/akhildoddapaneni/Code/AV/AV/build && $(MAKE) $(MAKESILENT) -f Hasher/CMakeFiles/hasher_manual_test.dir/build.make Hasher/CMakeFiles/hasher_manual_test.dir/hasher_manual_test.cpp.s
+.PHONY : hasher_manual_test.cpp.s
 
 # Help Target
 help:
@@ -288,7 +288,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... hasher"
-	@echo "... hasher_main"
+	@echo "... hasher_manual_test"
 	@echo "... hasher_tests"
 	@echo "... hasher.o"
 	@echo "... hasher.i"
@@ -296,9 +296,9 @@ help:
 	@echo "... hasher_gtest.o"
 	@echo "... hasher_gtest.i"
 	@echo "... hasher_gtest.s"
-	@echo "... hasher_main.o"
-	@echo "... hasher_main.i"
-	@echo "... hasher_main.s"
+	@echo "... hasher_manual_test.o"
+	@echo "... hasher_manual_test.i"
+	@echo "... hasher_manual_test.s"
 .PHONY : help
 
 

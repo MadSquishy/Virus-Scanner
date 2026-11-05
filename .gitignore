@@ -1,0 +1,22 @@
+# CMake artifacts 
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/CTestTestfile.cmake
+**/*_include.cmake
+
+# Build 
+build/
+cmake-build-*/
+**/build/
+
+# binaries and libraries
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+
+.vscode/

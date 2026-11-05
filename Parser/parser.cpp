@@ -53,7 +53,6 @@ bool has_executable(const fs::path& filepath) {
 bool is_scan_target(const std::filesystem::path& filepath, magic_t cookie) {
     if (has_executable(filepath)) {return true;}
 
-
     const char * result = magic_file(cookie, filepath.c_str());
     if(!result) { return true; }
     else {
