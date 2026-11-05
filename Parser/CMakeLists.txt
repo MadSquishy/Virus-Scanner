@@ -11,8 +11,6 @@ add_executable(parser_manual_test parser_manual_test.cpp)
 target_link_libraries(parser_manual_test PRIVATE parser)
 
 # gtest
-enable_testing()
-
 add_executable(parser_tests parser_gtest.cpp)
 
 target_include_directories(parser_tests PRIVATE ${LIBMAGIC_INCLUDE_DIRS})

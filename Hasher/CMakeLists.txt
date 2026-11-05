@@ -11,8 +11,6 @@ add_executable(hasher_manual_test hasher_manual_test.cpp)
 target_link_libraries(hasher_manual_test PRIVATE hasher)
 
 # gtest
-enable_testing()
-
 add_executable(hasher_tests hasher_gtest.cpp)
 
 target_link_libraries(hasher_tests PRIVATE

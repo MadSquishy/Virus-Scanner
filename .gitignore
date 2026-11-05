@@ -1,14 +1,18 @@
-# CMake artifacts 
+
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/Makefile
+/cmake_install.cmake
+/CTestTestfile.cmake
+/compile_commands.json
+/_deps/
 **/CMakeFiles/
 **/CMakeCache.txt
+**/Makefile
 **/cmake_install.cmake
 **/CTestTestfile.cmake
-**/*_include.cmake
-
-# Build 
-build/
-cmake-build-*/
-**/build/
+**/compile_commands.json
 
 # binaries and libraries
 *.o
