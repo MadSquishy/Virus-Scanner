@@ -3,3 +3,14 @@ add_library(yara_detect yara.cpp)
 target_include_directories(yara_detect PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 target_link_libraries(yara_detect PRIVATE PkgConfig::LIBYARA)
+
+add_executable(YARA_tests YARA_gtest.cpp)
+
+target_link_libraries(YARA_tests PRIVATE
+  yara_detect
+  GTest::gtest_main
+  PkgConfig::LIBYARA
+)
+
+include(GoogleTest)
+gtest_discover_tests(YARA_tests)

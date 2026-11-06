@@ -19,7 +19,7 @@ class YARA{
     bool load();    // load compiled yara rules
 public:
     YARA(std::filesystem::path rulesDir); // store rules_dir of yara rules
-    YAARA(); // YARA obj constructor if a load object is present
+    YARA(); // YARA obj constructor if a load object is present
     ~YARA();
     int getMatch(std::filesystem::path targetFile); // return1 if the given file is a match to the compiled yara rules 0 if not, -1 if incomplete
     bool ingest(std::filesystem::path ruleFile); // return true if the given rulefile is succesfully added 

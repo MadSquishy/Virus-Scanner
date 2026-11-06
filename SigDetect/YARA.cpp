@@ -28,6 +28,10 @@ YARA::~YARA(){
 
 void YARA::compile() {
     for (const auto& ruleset : std::filesystem::directory_iterator(rulesDir)) {
+
+        if (!ruleset.is_regular_file() || !(ruleset.path().extension() == ".yar" || ruleset.path().extension() == ".yara")) {
+            continue;
+        }
         YR_COMPILER* compiler = nullptr;
         YR_RULES* rules = nullptr;
 
@@ -72,6 +76,7 @@ int YARA::getMatch(std::filesystem::path targetFile) {
             scanCallBack, &matched, 10);
 
         if (result != ERROR_SUCCESS) {
+            std::cerr << "[YARA] Scan failed: " << targetFile << " error code " << result << std::endl;
             scanError = true;
         }
         if (matched) return 1;
@@ -158,7 +163,7 @@ bool YARA::load() {
     for (const auto& file : std::filesystem::directory_iterator(directory))
     {
         YR_RULES* rule = nullptr;
-        int result = yr_rules_load(file.string().c_str(), &rule);
+        int result = yr_rules_load(file.path().string().c_str(), &rule);
 
         if (result != ERROR_SUCCESS) // a rule couldnt be loaded. Something is broken on my (the publisher) end
         { // delete all loaded rules and manualy troubleshoot existing rules
