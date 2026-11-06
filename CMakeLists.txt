@@ -22,5 +22,9 @@ pkg_check_modules(LIBMAGIC REQUIRED libmagic)
 #openssl
 find_package(OpenSSL REQUIRED)
 
+#yara
+pkg_check_modules(LIBYARA REQUIRED IMPORTED_TARGET yara)
+
 add_subdirectory(Parser)
 add_subdirectory(Hasher)
+add_subdirectory(SigDetect)
